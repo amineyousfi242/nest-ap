@@ -13,3 +13,4 @@ jobs:
       - run: docker build . -t amineyousficc/nest-app
       - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u ${{secrets.DOCKER_USERNAME}} --password-stdin
       - run: docker push amineyousficc/nest-app
+
